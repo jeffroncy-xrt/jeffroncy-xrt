@@ -28,7 +28,7 @@ to run.
 
 |  |  |
 |---|---|
-| **Host** | one Hetzner VPS — 4 vCPU, 8 GB RAM, ~€7/mo |
+| **Host** | one Hetzner VPS — 4 vCPU, 8 GB RAM |
 | **Running** | 2 always-on services + 3 scheduled video pipelines |
 | **Track record** | 39 days continuous on the previous host, before migrating 2026-08-14 |
 | **Output** | 3 pipelines publishing daily, unattended |

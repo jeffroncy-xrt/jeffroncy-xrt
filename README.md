@@ -24,14 +24,14 @@ to run.
 
 ### The setup
 
-**Five systems. One small VPS. No operator.**
+**One small VPS. No operator.**
 
 |  |  |
 |---|---|
-| **Host** | one Hetzner VPS — 4 vCPU, 8 GB RAM |
-| **Running** | 2 always-on services + 3 scheduled video pipelines |
-| **Track record** | 39 days continuous on the previous host, before migrating 2026-08-14 |
-| **Output** | 3 pipelines publishing daily, unattended |
+| **Host** | one Hetzner VPS — 2 vCPU, 8 GB RAM |
+| **Running** | 3 daily video pipelines plus always-on trading, moderation and membership bots |
+| **Track record** | publishing daily and unattended; migrated between providers with no schedule change |
+| **Output** | pipelines publishing daily, unattended |
 | **Bursts to** | rented GPU, per-minute, for open-weights video generation |
 
 Everything about how these are scheduled, capped and prioritised follows from that
@@ -49,8 +49,8 @@ commercially removed. Each README says what was left out.
 | [**docs-video-pipeline**](https://github.com/jeffroncy-xrt/docs-video-pipeline) | Timeline planning and ffmpeg assembly for a daily documentary render, inside a hard memory ceiling |
 | [**news-video-pipeline**](https://github.com/jeffroncy-xrt/news-video-pipeline) | LLM script generation in Spanish, editorial linting of generated copy, and a publish gate that can refuse |
 | [**repost-pipeline**](https://github.com/jeffroncy-xrt/repost-pipeline) | Crash-safe scheduled publishing with a rolling buffer, reconciled against the platform API |
-| [**prediction-market-bot**](https://github.com/jeffroncy-xrt/prediction-market-bot) | Event-sourced execution layer for a prediction market — replayable state, tick constraints, precondition guards |
-| [**perps-news-bot**](https://github.com/jeffroncy-xrt/perps-news-bot) | News ingestion, cross-source deduplication and risk limits for a news-driven trading system |
+| [**prediction-market-bot**](https://github.com/jeffroncy-xrt/prediction-market-bot) | Event-sourced execution layer for a prediction market — replayable state, tick constraints, precondition guards, venue-reconciled fills |
+| [**perps-news-bot**](https://github.com/jeffroncy-xrt/perps-news-bot) | News ingestion, cross-source deduplication and risk limits for a news-driven trading system, evaluated costs-first |
 
 ### What I actually think about
 
